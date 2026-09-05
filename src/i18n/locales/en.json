@@ -5,18 +5,39 @@
     "experience": "Experience",
     "projects": "Projects",
     "skills": "Skills",
-    "contact": "Contact"
+    "contact": "Contact",
+    "switchLanguage": "Switch language"
   },
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Ruben Coto",
     "tagline": "Full-stack Software Engineer building production systems with .NET, React, and TypeScript — backed by 5+ years diagnosing AWS infrastructure in mission-critical environments.",
+    "location": "San José, Costa Rica",
+    "availability": "Open to opportunities",
     "downloadCv": "Download CV",
     "viewProjects": "View Projects"
   },
   "about": {
     "heading": "About Me",
-    "body": "Full-stack Software Engineer with experience building and deploying production systems using ASP.NET Core, React, TypeScript, and MySQL — backed by more than five years diagnosing AWS infrastructure in mission-critical environments. I design modular architectures with Domain-Driven Design, secure authentication, and cloud deployments on Railway for both personal and client projects. I'm currently completing a Bachelor's degree in Systems Engineering with an emphasis on Software Development (expected March 2027), and I'm AWS Certified Solutions Architect – Associate, looking for a role that combines software development with cloud expertise."
+    "body": "Full-stack Software Engineer with experience building and deploying production systems using ASP.NET Core, React, TypeScript, and MySQL — backed by more than five years diagnosing AWS infrastructure in mission-critical environments. I design modular architectures with Domain-Driven Design, secure authentication, and cloud deployments on Railway for both personal and client projects. I'm currently completing a Bachelor's degree in Systems Engineering with an emphasis on Software Development (expected March 2027), and I'm AWS Certified Solutions Architect – Associate, looking for a role that combines software development with cloud expertise.",
+    "facts": {
+      "location": {
+        "label": "Based in",
+        "value": "San José, Costa Rica"
+      },
+      "education": {
+        "label": "Education",
+        "value": "B.Sc. Systems Engineering — Universidad Latina de Costa Rica, expected 2027"
+      },
+      "certification": {
+        "label": "Certification",
+        "value": "AWS Certified Solutions Architect – Associate"
+      },
+      "languages": {
+        "label": "Languages",
+        "value": "Spanish (native) · English (C1)"
+      }
+    }
   },
   "experience": {
     "heading": "Experience",
@@ -69,5 +90,8 @@
     "emailLabel": "Email",
     "linkedinLabel": "LinkedIn",
     "githubLabel": "GitHub"
+  },
+  "footer": {
+    "builtWith": "Built with React, Vite & TypeScript"
   }
 }

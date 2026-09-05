@@ -4,7 +4,7 @@ import { STORAGE_KEY } from '../i18n';
 const LANGUAGES = ['en', 'es'] as const;
 
 export function LanguageSwitch() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const current = i18n.language.startsWith('es') ? 'es' : 'en';
   const next = LANGUAGES.find((language) => language !== current) ?? 'en';
 
@@ -14,7 +14,12 @@ export function LanguageSwitch() {
   }
 
   return (
-    <button type="button" className="language-switch" onClick={handleClick}>
+    <button
+      type="button"
+      className="language-switch"
+      onClick={handleClick}
+      aria-label={t('nav.switchLanguage')}
+    >
       {next.toUpperCase()}
     </button>
   );

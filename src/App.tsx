@@ -5,9 +5,13 @@ import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
+import { useScrollReveal } from './hooks/useScrollReveal';
 import './i18n';
 
 export function App() {
+  useScrollReveal();
+
   return (
     <>
       <Nav />
@@ -19,6 +23,7 @@ export function App() {
         <Skills />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }

@@ -2,14 +2,20 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// NOTE: `base` assumes the GitHub repo this is deployed from is named
-// `portfolio`. If the repo name differs, update this value accordingly.
+// The site is served from a project subpath on GitHub Pages. This assumes the
+// repo is named `portfolio` — if the repo name differs, update this value.
+const BASE = '/portfolio/';
+
 export default defineConfig({
-  base: '/portfolio/',
+  base: BASE,
   plugins: [react()],
   test: {
     environment: 'jsdom',
     globals: true,
     setupFiles: './src/test/setup.ts',
+    // Vitest does not inherit `base`, so mirror it explicitly. Without this,
+    // `import.meta.env.BASE_URL` is "/" under test and subpath-relative links
+    // (the CV download) would look correct in tests while 404ing in production.
+    env: { BASE_URL: BASE },
   },
 });

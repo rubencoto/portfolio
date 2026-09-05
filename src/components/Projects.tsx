@@ -1,18 +1,21 @@
 import { useTranslation } from 'react-i18next';
 import { projects } from '../data/projects';
 import { ProjectCard } from './ProjectCard';
+import { SectionHeading } from './SectionHeading';
 
 export function Projects() {
   const { t } = useTranslation();
 
   return (
     <section id="projects" className="section">
-      <h2 className="section__heading">{t('projects.heading')}</h2>
-      <div className="projects-grid">
+      <SectionHeading index="03" title={t('projects.heading')} />
+      <ul className="projects-list">
         {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+          <li key={project.id} data-reveal>
+            <ProjectCard project={project} />
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

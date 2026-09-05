@@ -5,18 +5,39 @@
     "experience": "Experiencia",
     "projects": "Proyectos",
     "skills": "Skills",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "switchLanguage": "Cambiar idioma"
   },
   "hero": {
     "greeting": "Hola, soy",
     "name": "Ruben Coto",
     "tagline": "Ingeniero de software full-stack construyendo sistemas en producción con .NET, React y TypeScript — respaldado por más de 5 años diagnosticando infraestructura de AWS en entornos de misión crítica.",
+    "location": "San José, Costa Rica",
+    "availability": "Disponible para oportunidades",
     "downloadCv": "Descargar CV",
     "viewProjects": "Ver Proyectos"
   },
   "about": {
     "heading": "Sobre mí",
-    "body": "Ingeniero de software full-stack con experiencia construyendo y desplegando sistemas en producción usando ASP.NET Core, React, TypeScript y MySQL — respaldado por más de cinco años diagnosticando infraestructura de AWS en entornos de misión crítica. Diseño arquitecturas modulares con Domain-Driven Design, autenticación segura y despliegues en la nube en Railway, tanto en proyectos personales como para clientes. Actualmente termino una Licenciatura en Ingeniería en Sistemas con énfasis en Desarrollo de Software (graduación estimada marzo de 2027), y tengo la certificación AWS Certified Solutions Architect – Associate; busco un rol que combine desarrollo de software con experiencia en la nube."
+    "body": "Ingeniero de software full-stack con experiencia construyendo y desplegando sistemas en producción usando ASP.NET Core, React, TypeScript y MySQL — respaldado por más de cinco años diagnosticando infraestructura de AWS en entornos de misión crítica. Diseño arquitecturas modulares con Domain-Driven Design, autenticación segura y despliegues en la nube en Railway, tanto en proyectos personales como para clientes. Actualmente termino una Licenciatura en Ingeniería en Sistemas con énfasis en Desarrollo de Software (graduación estimada marzo de 2027), y tengo la certificación AWS Certified Solutions Architect – Associate; busco un rol que combine desarrollo de software con experiencia en la nube.",
+    "facts": {
+      "location": {
+        "label": "Ubicación",
+        "value": "San José, Costa Rica"
+      },
+      "education": {
+        "label": "Formación",
+        "value": "Ingeniería en Sistemas — Universidad Latina de Costa Rica, graduación estimada 2027"
+      },
+      "certification": {
+        "label": "Certificación",
+        "value": "AWS Certified Solutions Architect – Associate"
+      },
+      "languages": {
+        "label": "Idiomas",
+        "value": "Español (nativo) · Inglés (C1)"
+      }
+    }
   },
   "experience": {
     "heading": "Experiencia",
@@ -69,5 +90,8 @@
     "emailLabel": "Email",
     "linkedinLabel": "LinkedIn",
     "githubLabel": "GitHub"
+  },
+  "footer": {
+    "builtWith": "Construido con React, Vite y TypeScript"
   }
 }

@@ -1,17 +1,47 @@
 :root {
   color-scheme: dark;
-  --color-bg: #0b0f19;
-  --color-bg-elevated: #111827;
-  --color-border: #1f2937;
-  --color-text: #e5e7eb;
-  --color-text-muted: #9ca3af;
-  --color-accent: #22d3ee;
-  --color-accent-strong: #06b6d4;
-  --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  --font-mono: Consolas, 'SFMono-Regular', Menlo, monospace;
-  --radius: 8px;
+
+  /* Surfaces — warm ink blacks rather than cold navy */
+  --color-bg: #0c0b09;
+  --color-bg-elevated: #131110;
+  --color-bg-raised: #191614;
+
+  /* Hairlines */
+  --color-rule: #2a251e;
+  --color-rule-strong: #3d372d;
+
+  /* Type — aged paper, not pure white */
+  --color-text: #ece5d8;
+  --color-text-muted: #a49b8b;
+  /* Kept at >=4.5:1 against --color-bg: this tone carries real content
+     (dates, skill categories, module labels), not just decoration. */
+  --color-text-faint: #8a8175;
+
+  /* Accent — brass/amber, the ink of a printed plate */
+  --color-accent: #e0a63c;
+  --color-accent-soft: #8a6a2a;
+  --color-accent-wash: rgba(224, 166, 60, 0.09);
+
+  /* Typography */
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', Consolas, 'SFMono-Regular', monospace;
+
+  /* Rhythm */
+  --radius: 2px;
   --spacing-1: 8px;
   --spacing-2: 16px;
   --spacing-3: 24px;
   --spacing-4: 48px;
+  --spacing-5: 80px;
+  --spacing-6: 128px;
+
+  /* Layout */
+  --shell: 74rem;
+  --measure: 38rem;
+  --nav-height: 68px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration: 0.6s;
 }
