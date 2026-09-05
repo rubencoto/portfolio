@@ -572,7 +572,18 @@ a {
   display: grid;
   grid-template-columns: 6rem minmax(0, 1fr);
   gap: var(--space-4);
-  align-items: baseline;
+  align-items: center;
+}
+
+.contact__label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.contact__label svg {
+  flex-shrink: 0;
+  color: var(--text-faint);
 }
 
 /* --------------------------------------------------------------- Footer */
