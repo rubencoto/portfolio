@@ -16,7 +16,7 @@ export interface ExperienceEntry {
   id: string;
 }
 
-export type SkillCategory = 'backend' | 'frontend' | 'database' | 'tools';
+export type SkillCategory = 'backend' | 'frontend' | 'database' | 'cloud' | 'tools';
 
 export interface SkillGroup {
   id: SkillCategory;

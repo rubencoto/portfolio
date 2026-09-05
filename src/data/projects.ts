@@ -7,7 +7,14 @@ export const projects: Project[] = [
   },
   {
     id: 'cdm',
-    tech: ['C#', '.NET', 'React'],
-    modules: [{ id: 'bot' }, { id: 'erp' }],
+    tech: ['.NET 8', 'EF Core', 'MySQL', 'React', 'TypeScript', 'DDD'],
+    modules: [
+      { id: 'scheduling' },
+      { id: 'clinicalHistory' },
+      { id: 'compliance' },
+      { id: 'reports' },
+      { id: 'whatsappBot' },
+    ],
+    links: { live: 'https://consultoriosdrmoraga.com' },
   },
 ];

@@ -29,6 +29,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </ul>
         </div>
       )}
+      {project.links?.live && (
+        <a className="contact-link" href={project.links.live} target="_blank" rel="noreferrer">
+          {t('projects.viewLiveLabel')}
+        </a>
+      )}
     </article>
   );
 }

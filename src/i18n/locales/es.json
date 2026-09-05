@@ -10,36 +10,46 @@
   "hero": {
     "greeting": "Hola, soy",
     "name": "Ruben Coto",
-    "tagline": "Ingeniero de software construyendo sistemas web confiables con .NET, TypeScript y React.",
+    "tagline": "Ingeniero de software full-stack construyendo sistemas en producción con .NET, React y TypeScript — respaldado por más de 5 años diagnosticando infraestructura de AWS en entornos de misión crítica.",
     "downloadCv": "Descargar CV",
     "viewProjects": "Ver Proyectos"
   },
   "about": {
     "heading": "Sobre mí",
-    "body": "Bio de ejemplo — actualiza esto en src/i18n/locales/es.json con tu experiencia real, áreas de enfoque y lo que buscas."
+    "body": "Ingeniero de software full-stack con experiencia construyendo y desplegando sistemas en producción usando ASP.NET Core, React, TypeScript y MySQL — respaldado por más de cinco años diagnosticando infraestructura de AWS en entornos de misión crítica. Diseño arquitecturas modulares con Domain-Driven Design, autenticación segura y despliegues en la nube en Railway, tanto en proyectos personales como para clientes. Actualmente termino una Licenciatura en Ingeniería en Sistemas con énfasis en Desarrollo de Software (graduación estimada marzo de 2027), y tengo la certificación AWS Certified Solutions Architect – Associate; busco un rol que combine desarrollo de software con experiencia en la nube."
   },
   "experience": {
     "heading": "Experiencia",
-    "current": {
-      "role": "Actualiza este puesto",
-      "company": "Actualiza este nombre de empresa",
-      "period": "Actualiza estas fechas",
-      "description": "Actualiza esto con una descripción real de lo que hiciste en este puesto."
+    "awsSupportSpecialist": {
+      "role": "Especialista de Soporte Técnico de AWS",
+      "company": "Amazon Support Services CR",
+      "period": "Ene 2023 – Mar 2026",
+      "description": "Punto de escalamiento para incidentes de alta severidad, diagnosticando y resolviendo problemas complejos en EC2, S3, EBS, RDS, DynamoDB, VPC y Route 53. Analicé logs de CloudWatch y configuraciones del sistema para identificar causas raíz de caídas y degradación de rendimiento, reproduciendo problemas en entornos de prueba aislados para validar soluciones."
+    },
+    "advancedTechnician": {
+      "role": "Técnico Avanzado, D2AS",
+      "company": "Amazon Support Services CR (Remoto)",
+      "period": "Jul 2020 – Dic 2022",
+      "description": "Actué como experto de referencia apoyando a asociados de Tier 1 y Tier 2 en problemas complejos de hardware, software y conectividad de dispositivos Amazon Echo y Alexa, y fui el enlace principal entre los equipos de Hardware y Software para agilizar el diagnóstico entre áreas."
     }
   },
   "projects": {
     "heading": "Proyectos Destacados",
+    "viewLiveLabel": "Visitar sitio",
     "tucitaonline": {
       "title": "TuCitaOnline",
       "description": "Una plataforma SaaS para administración de consultorios médicos — citas, expedientes y flujos de trabajo de la clínica."
     },
     "cdm": {
       "title": "Consultorios Dr. Moraga",
-      "description": "Un sistema multi-módulo construido para un cliente de consultorio médico, que abarca desde automatización para pacientes hasta gestión administrativa.",
+      "description": "Sistema de gestión clínica de un solo inquilino construido para Consultorios Dr. Roy Moraga — un monolito modular en .NET 8 con Domain-Driven Design a través de más de 16 módulos, con frontend en React/TypeScript y MySQL vía EF Core, desplegado en Railway.",
       "modulesHeading": "Módulos",
       "modules": {
-        "bot": "Bot de reserva de citas",
-        "erp": "ERP de gestión de la clínica"
+        "scheduling": "Agenda de citas configurable por consultorio",
+        "clinicalHistory": "Historial clínico digital y expedientes de pacientes",
+        "compliance": "Registro de auditoría conforme a la Ley 8968 de Costa Rica (protección de datos)",
+        "reports": "Generación automática de reportes en PDF",
+        "whatsappBot": "Agente de WhatsApp con IA para reserva de citas (Twilio + Anthropic SDK)"
       }
     }
   },
@@ -49,6 +59,7 @@
       "backend": "Backend",
       "frontend": "Frontend",
       "database": "Base de datos",
+      "cloud": "Cloud y DevOps",
       "tools": "Herramientas"
     }
   },

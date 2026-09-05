@@ -1,8 +1,9 @@
 import type { SkillGroup } from './types';
 
 export const skillGroups: SkillGroup[] = [
-  { id: 'backend', items: ['C#', '.NET', 'ASP.NET Core', 'SQL Server'] },
-  { id: 'frontend', items: ['React', 'TypeScript', 'Vite'] },
-  { id: 'database', items: ['SQL Server', 'PostgreSQL'] },
-  { id: 'tools', items: ['Git', 'Docker', 'GitHub Actions'] },
+  { id: 'backend', items: ['C#', '.NET 8', 'ASP.NET Core', 'Java', 'Entity Framework Core'] },
+  { id: 'frontend', items: ['React', 'TypeScript', 'Next.js', 'JavaScript'] },
+  { id: 'database', items: ['MySQL', 'SQL Server', 'PostgreSQL'] },
+  { id: 'cloud', items: ['AWS', 'Railway', 'Docker', 'GitHub Actions', 'CI/CD'] },
+  { id: 'tools', items: ['Git', 'Visual Studio', 'VS Code', 'Figma'] },
 ];

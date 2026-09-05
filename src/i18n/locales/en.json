@@ -10,36 +10,46 @@
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Ruben Coto",
-    "tagline": "Software Engineer building reliable web systems with .NET, TypeScript, and React.",
+    "tagline": "Full-stack Software Engineer building production systems with .NET, React, and TypeScript — backed by 5+ years diagnosing AWS infrastructure in mission-critical environments.",
     "downloadCv": "Download CV",
     "viewProjects": "View Projects"
   },
   "about": {
     "heading": "About Me",
-    "body": "Placeholder bio — update this in src/i18n/locales/en.json with your real background, focus areas, and what you're looking for next."
+    "body": "Full-stack Software Engineer with experience building and deploying production systems using ASP.NET Core, React, TypeScript, and MySQL — backed by more than five years diagnosing AWS infrastructure in mission-critical environments. I design modular architectures with Domain-Driven Design, secure authentication, and cloud deployments on Railway for both personal and client projects. I'm currently completing a Bachelor's degree in Systems Engineering with an emphasis on Software Development (expected March 2027), and I'm AWS Certified Solutions Architect – Associate, looking for a role that combines software development with cloud expertise."
   },
   "experience": {
     "heading": "Experience",
-    "current": {
-      "role": "Update this role title",
-      "company": "Update this company name",
-      "period": "Update these dates",
-      "description": "Update this with a real description of what you did in this role."
+    "awsSupportSpecialist": {
+      "role": "AWS Technical Support Specialist",
+      "company": "Amazon Support Services CR",
+      "period": "Jan 2023 – Mar 2026",
+      "description": "Served as an escalation point for high-severity incidents, diagnosing and resolving complex issues across EC2, S3, EBS, RDS, DynamoDB, VPC, and Route 53. Analyzed CloudWatch logs and system configurations to identify root causes of outages and performance degradation, reproducing issues in isolated test environments to validate fixes."
+    },
+    "advancedTechnician": {
+      "role": "Advanced Technician, D2AS",
+      "company": "Amazon Support Services CR (Remote)",
+      "period": "Jul 2020 – Dec 2022",
+      "description": "Acted as a subject matter expert supporting Tier 1 and Tier 2 associates on complex Amazon Echo and Alexa hardware, software, and connectivity issues, and served as the primary liaison between Hardware and Software teams to speed up cross-functional diagnostics."
     }
   },
   "projects": {
     "heading": "Featured Projects",
+    "viewLiveLabel": "Visit Site",
     "tucitaonline": {
       "title": "TuCitaOnline",
       "description": "A SaaS platform for medical practice administration — appointments, patient records, and clinic workflows."
     },
     "cdm": {
       "title": "Consultorios Dr. Moraga",
-      "description": "A multi-module system built for a medical clinic client, spanning everything from patient-facing automation to back-office management.",
+      "description": "A single-tenant clinical management system built for Consultorios Dr. Roy Moraga — a modular monolith in .NET 8 using Domain-Driven Design across 16+ modules, with a React/TypeScript frontend and MySQL via EF Core, deployed on Railway.",
       "modulesHeading": "Modules",
       "modules": {
-        "bot": "Appointment booking bot",
-        "erp": "Clinic management ERP"
+        "scheduling": "Configurable per-room appointment scheduling",
+        "clinicalHistory": "Digital clinical history and patient records",
+        "compliance": "Audit logging compliant with Costa Rica's Law 8968 (data protection)",
+        "reports": "Automated PDF report generation",
+        "whatsappBot": "AI-powered WhatsApp agent for appointment booking (Twilio + Anthropic SDK)"
       }
     }
   },
@@ -49,6 +59,7 @@
       "backend": "Backend",
       "frontend": "Frontend",
       "database": "Database",
+      "cloud": "Cloud & DevOps",
       "tools": "Tools"
     }
   },

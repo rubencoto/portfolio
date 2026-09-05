@@ -11,7 +11,12 @@ describe('Experience', () => {
   it('renders one timeline entry per experience data item', () => {
     render(<Experience />);
 
-    expect(screen.getByRole('heading', { name: 'Update this role title', level: 3 })).toBeInTheDocument();
-    expect(screen.getByText(/Update this company name/)).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'AWS Technical Support Specialist', level: 3 }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'Advanced Technician, D2AS', level: 3 }),
+    ).toBeInTheDocument();
+    expect(screen.getAllByText(/Amazon Support Services CR/)).toHaveLength(2);
   });
 });
