@@ -70,7 +70,7 @@ p {
   gap: var(--spacing-2);
   min-height: var(--nav-height);
   padding: var(--spacing-2) var(--spacing-3);
-  background-color: rgba(12, 11, 9, 0.78);
+  background-color: rgba(11, 14, 18, 0.78);
   backdrop-filter: blur(14px) saturate(140%);
   -webkit-backdrop-filter: blur(14px) saturate(140%);
   border-bottom: 1px solid var(--color-rule);
@@ -166,7 +166,7 @@ p {
   overflow: hidden;
 }
 
-/* Soft brass glow bleeding off the top-left */
+/* Soft steel glow bleeding off the top-left */
 .hero::before {
   content: '';
   position: absolute;
@@ -176,7 +176,7 @@ p {
   height: 46rem;
   max-width: 120%;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(224, 166, 60, 0.11) 0%, transparent 62%);
+  background: radial-gradient(circle, rgba(124, 156, 196, 0.13) 0%, transparent 62%);
   pointer-events: none;
 }
 
@@ -280,13 +280,13 @@ p {
 .btn--primary {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
-  color: #17120a;
+  color: var(--color-accent-ink);
   font-weight: 500;
 }
 
 .btn--primary:hover {
-  background-color: #f2ba54;
-  border-color: #f2ba54;
+  background-color: var(--color-accent-bright);
+  border-color: var(--color-accent-bright);
   transform: translateY(-2px);
 }
 

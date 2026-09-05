@@ -1,26 +1,28 @@
 :root {
   color-scheme: dark;
 
-  /* Surfaces — warm ink blacks rather than cold navy */
-  --color-bg: #0c0b09;
-  --color-bg-elevated: #131110;
-  --color-bg-raised: #191614;
+  /* Surfaces — cool blue-blacks */
+  --color-bg: #0b0e12;
+  --color-bg-elevated: #11151b;
+  --color-bg-raised: #171c24;
 
   /* Hairlines */
-  --color-rule: #2a251e;
-  --color-rule-strong: #3d372d;
+  --color-rule: #232a33;
+  --color-rule-strong: #333c48;
 
-  /* Type — aged paper, not pure white */
-  --color-text: #ece5d8;
-  --color-text-muted: #a49b8b;
+  /* Type */
+  --color-text: #e4e8ee;
+  --color-text-muted: #98a1af;
   /* Kept at >=4.5:1 against --color-bg: this tone carries real content
      (dates, skill categories, module labels), not just decoration. */
-  --color-text-faint: #8a8175;
+  --color-text-faint: #7d8695;
 
-  /* Accent — brass/amber, the ink of a printed plate */
-  --color-accent: #e0a63c;
-  --color-accent-soft: #8a6a2a;
-  --color-accent-wash: rgba(224, 166, 60, 0.09);
+  /* Accent — steel blue: cool and technical without the neon-cyan cliche */
+  --color-accent: #7c9cc4;
+  --color-accent-bright: #93aed2;
+  --color-accent-soft: #4a6280;
+  --color-accent-wash: rgba(124, 156, 196, 0.1);
+  --color-accent-ink: #0b1018;
 
   /* Typography */
   --font-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
