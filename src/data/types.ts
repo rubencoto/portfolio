@@ -1,28 +1,33 @@
-export interface ProjectModule {
-  id: string;
+export interface ProjectLinks {
+  live?: string;
+  github?: string;
 }
 
 export interface Project {
   id: string;
   tech: string[];
-  modules?: ProjectModule[];
-  links?: {
-    github?: string;
-    live?: string;
-  };
+  links?: ProjectLinks;
 }
 
 export interface ExperienceEntry {
   id: string;
+  /** Optional: not every role has a meaningful technology stack. */
+  tech?: string[];
 }
 
-export interface AboutFact {
-  id: string;
-}
-
-export type SkillCategory = 'backend' | 'frontend' | 'database' | 'cloud' | 'tools';
+export type SkillCategory =
+  | 'languages'
+  | 'frontend'
+  | 'backend'
+  | 'cloud'
+  | 'databases'
+  | 'tools';
 
 export interface SkillGroup {
   id: SkillCategory;
   items: string[];
+}
+
+export interface AboutBlock {
+  id: string;
 }

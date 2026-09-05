@@ -7,11 +7,11 @@ export function Projects() {
   const { t } = useTranslation();
 
   return (
-    <section id="projects" className="section">
-      <SectionHeading index="03" title={t('projects.heading')} />
-      <ul className="projects-list">
+    <section id="projects" className="section shell">
+      <SectionHeading title={t('projects.heading')} />
+      <ul className="projects">
         {projects.map((project) => (
-          <li key={project.id} data-reveal>
+          <li key={project.id} className="reveal">
             <ProjectCard project={project} />
           </li>
         ))}

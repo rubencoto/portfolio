@@ -2,19 +2,23 @@ import type { Project } from './types';
 
 export const projects: Project[] = [
   {
-    id: 'tucitaonline',
-    tech: ['C#', '.NET', 'React', 'TypeScript'],
-  },
-  {
     id: 'cdm',
-    tech: ['.NET 8', 'EF Core', 'MySQL', 'React', 'TypeScript', 'DDD'],
-    modules: [
-      { id: 'scheduling' },
-      { id: 'clinicalHistory' },
-      { id: 'compliance' },
-      { id: 'reports' },
-      { id: 'whatsappBot' },
+    tech: [
+      '.NET 8',
+      'C#',
+      'EF Core',
+      'MySQL',
+      'React 18',
+      'TypeScript',
+      'Redis',
+      'SignalR',
+      'Twilio',
+      'Railway',
     ],
     links: { live: 'https://consultoriosdrmoraga.com' },
+  },
+  {
+    id: 'tucitaonline',
+    tech: ['C#', '.NET', 'React', 'TypeScript'],
   },
 ];

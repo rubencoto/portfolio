@@ -1,23 +1,50 @@
 import { useTranslation } from 'react-i18next';
 import { experience } from '../data/experience';
+import { useList } from '../hooks/useList';
 import { SectionHeading } from './SectionHeading';
+import type { ExperienceEntry } from '../data/types';
+
+function Role({ entry }: { entry: ExperienceEntry }) {
+  const { t } = useTranslation();
+  const points = useList(`experience.${entry.id}.points`);
+
+  return (
+    <li className="role reveal">
+      <div className="role__period label">
+        <div>{t(`experience.${entry.id}.period`)}</div>
+        <div>{t(`experience.${entry.id}.location`)}</div>
+      </div>
+      <div>
+        <h3 className="role__title">{t(`experience.${entry.id}.role`)}</h3>
+        <p className="role__company">{t(`experience.${entry.id}.company`)}</p>
+        <ul className="role__points">
+          {points.map((point) => (
+            <li key={point}>{point}</li>
+          ))}
+        </ul>
+        {entry.tech && entry.tech.length > 0 && (
+          <ul className="stack">
+            {entry.tech.map((tech) => (
+              <li key={tech} className="tok">
+                {tech}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </li>
+  );
+}
 
 export function Experience() {
   const { t } = useTranslation();
 
   return (
-    <section id="experience" className="section">
-      <SectionHeading index="02" title={t('experience.heading')} />
-      <ol className="timeline">
+    <section id="experience" className="section shell">
+      <SectionHeading title={t('experience.heading')} />
+      <ol className="roles">
         {experience.map((entry) => (
-          <li key={entry.id} className="timeline__item" data-reveal>
-            <p className="timeline__period">{t(`experience.${entry.id}.period`)}</p>
-            <div>
-              <h3 className="timeline__role">{t(`experience.${entry.id}.role`)}</h3>
-              <p className="timeline__company">{t(`experience.${entry.id}.company`)}</p>
-              <p className="timeline__description">{t(`experience.${entry.id}.description`)}</p>
-            </div>
-          </li>
+          <Role key={entry.id} entry={entry} />
         ))}
       </ol>
     </section>

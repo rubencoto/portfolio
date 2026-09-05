@@ -1,8 +1,8 @@
-import type { AboutFact } from './types';
+import type { AboutBlock } from './types';
 
-export const aboutFacts: AboutFact[] = [
-  { id: 'location' },
+export const aboutBlocks: AboutBlock[] = [
+  { id: 'engineering' },
+  { id: 'cloud' },
   { id: 'education' },
   { id: 'certification' },
-  { id: 'languages' },
 ];

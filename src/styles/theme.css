@@ -1,49 +1,57 @@
 :root {
   color-scheme: dark;
 
-  /* Surfaces — cool blue-blacks */
-  --color-bg: #0b0e12;
-  --color-bg-elevated: #11151b;
-  --color-bg-raised: #171c24;
+  /* Surfaces — neutral near-black with a cool cast */
+  --bg: #0a0c10;
+  --surface: #0f1218;
+  --surface-2: #141821;
 
-  /* Hairlines */
-  --color-rule: #232a33;
-  --color-rule-strong: #333c48;
+  /* 1px borders do most of the structural work in this design */
+  --border: #1d222b;
+  --border-strong: #2a303b;
 
-  /* Type */
-  --color-text: #e4e8ee;
-  --color-text-muted: #98a1af;
-  /* Kept at >=4.5:1 against --color-bg: this tone carries real content
-     (dates, skill categories, module labels), not just decoration. */
-  --color-text-faint: #7d8695;
+  /* Text — all tones verified >=4.5:1 against --bg and --surface */
+  --text: #e7eaf0;
+  --text-muted: #98a1b0;
+  --text-faint: #7b8594;
 
-  /* Accent — steel blue: cool and technical without the neon-cyan cliche */
-  --color-accent: #7c9cc4;
-  --color-accent-bright: #93aed2;
-  --color-accent-soft: #4a6280;
-  --color-accent-wash: rgba(124, 156, 196, 0.1);
-  --color-accent-ink: #0b1018;
+  /* Accent — used sparingly: links, focus, active nav, small markers */
+  --accent: #6b9bd8;
+  --accent-hi: #8fb6e8;
+  --accent-dim: #3a5f8f;
+  --accent-wash: rgba(107, 155, 216, 0.1);
+  --accent-ink: #08131f;
 
-  /* Typography */
-  --font-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
-  --font-body: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
-  --font-mono: 'IBM Plex Mono', Consolas, 'SFMono-Regular', monospace;
+  --font-sans:
+    'IBM Plex Sans', ui-sans-serif, -apple-system, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Consolas, 'SFMono-Regular', monospace;
 
-  /* Rhythm */
-  --radius: 2px;
-  --spacing-1: 8px;
-  --spacing-2: 16px;
-  --spacing-3: 24px;
-  --spacing-4: 48px;
-  --spacing-5: 80px;
-  --spacing-6: 128px;
+  --radius: 6px;
+  --radius-sm: 4px;
 
-  /* Layout */
-  --shell: 74rem;
-  --measure: 38rem;
-  --nav-height: 68px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
 
-  /* Motion */
+  --shell: 64rem;
+  --measure: 42rem;
+  --nav-h: 56px;
+
+  /* Gutters respect the notch/rounded corners on iOS */
+  --gutter: 20px;
+  --gutter-l: max(var(--gutter), env(safe-area-inset-left));
+  --gutter-r: max(var(--gutter), env(safe-area-inset-right));
+
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --duration: 0.6s;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --gutter: 32px;
+  }
 }

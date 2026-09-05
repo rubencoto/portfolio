@@ -12,18 +12,24 @@ npm run typecheck # type-check without emitting
 npm run build     # type-check and build to dist/
 ```
 
-## Content still needed
+## How content is structured
 
-Bio, experience, CV PDF, and the CDM project details were filled in from
-Ruben's CV (Sept 2026). Remaining optional items:
+Structure lives in `src/data/` (which entries exist, their order, their tech
+stacks and links). All prose lives in `src/i18n/locales/en.json` and `es.json`,
+keyed by the same ids. A test enforces that both locales define exactly the
+same keys, so a translation can never silently go missing.
 
-- **Project screenshots** — optional; not wired up yet.
-- **More experience entries** — add another object to the `experience` array
-  in `src/data/experience.ts` and a matching `experience.<id>` block in both
-  `src/i18n/locales/en.json` and `es.json`.
-- **More CDM modules** — add a module id to the `modules` array for the `cdm`
-  project in `src/data/projects.ts`, and a matching translation under
-  `projects.cdm.modules.<id>` in both locale files.
+To add an entry:
+
+- **Experience** — append to the `experience` array in `src/data/experience.ts`,
+  then add a matching `experience.<id>` block (`role`, `company`, `location`,
+  `period`, `points[]`) to both locale files.
+- **Project** — append to `projects` in `src/data/projects.ts`, then add
+  `projects.<id>` (`title`, `context`, `status`, `summary`, optional `notes[]`)
+  to both locale files. Omit `notes` and the Architecture block is not rendered.
+- **Skill group** — add the id to `SkillCategory` in `src/data/types.ts`, the
+  group to `src/data/skills.ts`, and a label under `skills.categories` in both
+  locale files.
 
 ## Deployment
 

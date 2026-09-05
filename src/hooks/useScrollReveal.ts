@@ -1,19 +1,18 @@
 import { useEffect } from 'react';
 
 /**
- * Reveals every `[data-reveal]` element once it scrolls into view by stamping
- * `data-revealed` on it. One observer for the whole page rather than one per
- * component, so adding a revealed element costs nothing but the attribute.
+ * Adds `data-shown` to `.reveal` elements once they enter the viewport. One
+ * observer for the page rather than one per component.
  *
  * Degrades to "everything visible" when IntersectionObserver is unavailable
- * (jsdom under test, very old browsers) so content is never stuck hidden.
+ * (jsdom under test, older browsers) so content is never stuck hidden.
  */
 export function useScrollReveal(): void {
   useEffect(() => {
-    const targets = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'));
+    const targets = Array.from(document.querySelectorAll<HTMLElement>('.reveal'));
 
     if (typeof IntersectionObserver === 'undefined') {
-      targets.forEach((target) => target.setAttribute('data-revealed', ''));
+      targets.forEach((target) => target.setAttribute('data-shown', ''));
       return;
     }
 
@@ -23,11 +22,11 @@ export function useScrollReveal(): void {
           if (!entry.isIntersecting) {
             return;
           }
-          entry.target.setAttribute('data-revealed', '');
+          entry.target.setAttribute('data-shown', '');
           observer.unobserve(entry.target);
         });
       },
-      { rootMargin: '0px 0px -12% 0px', threshold: 0.05 },
+      { rootMargin: '0px 0px -8% 0px', threshold: 0.05 },
     );
 
     targets.forEach((target) => observer.observe(target));

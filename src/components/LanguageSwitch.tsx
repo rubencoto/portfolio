@@ -16,7 +16,7 @@ export function LanguageSwitch() {
   return (
     <button
       type="button"
-      className="language-switch"
+      className="lang"
       onClick={handleClick}
       aria-label={t('nav.switchLanguage')}
     >

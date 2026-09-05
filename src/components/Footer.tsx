@@ -4,7 +4,7 @@ export function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="footer">
+    <footer className="footer shell">
       <span>© {new Date().getFullYear()} Ruben Coto</span>
       <span>{t('footer.builtWith')}</span>
     </footer>

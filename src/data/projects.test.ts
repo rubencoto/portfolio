@@ -2,29 +2,27 @@ import { describe, expect, it } from 'vitest';
 import { projects } from './projects';
 
 describe('projects data', () => {
-  it('includes the CDM project with all five real-world modules', () => {
-    const cdm = projects.find((project) => project.id === 'cdm');
-
-    expect(cdm).toBeDefined();
-    expect(cdm?.modules?.map((module) => module.id)).toEqual([
-      'scheduling',
-      'clinicalHistory',
-      'compliance',
-      'reports',
-      'whatsappBot',
-    ]);
+  it('leads with CDM, the project with the most engineering depth', () => {
+    expect(projects[0]?.id).toBe('cdm');
   });
 
-  it('includes a live link for the CDM project', () => {
+  it('gives the CDM project a live link', () => {
     const cdm = projects.find((project) => project.id === 'cdm');
 
     expect(cdm?.links?.live).toBe('https://consultoriosdrmoraga.com');
   });
 
-  it('includes the TuCitaOnline project with no modules', () => {
+  // TuCitaOnline is a private repository, so it must not advertise a link.
+  it('leaves TuCitaOnline without links', () => {
     const tucitaonline = projects.find((project) => project.id === 'tucitaonline');
 
     expect(tucitaonline).toBeDefined();
-    expect(tucitaonline?.modules).toBeUndefined();
+    expect(tucitaonline?.links).toBeUndefined();
+  });
+
+  it('gives every project a non-empty stack', () => {
+    for (const project of projects) {
+      expect(project.tech.length).toBeGreaterThan(0);
+    }
   });
 });

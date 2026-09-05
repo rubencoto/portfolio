@@ -1,17 +1,16 @@
+import type { ReactNode } from 'react';
+
 interface SectionHeadingProps {
-  /** Two-digit plate number shown before the title, e.g. "01". */
-  index: string;
   title: string;
+  /** Optional right-aligned detail, e.g. a count or a supporting link. */
+  aside?: ReactNode;
 }
 
-export function SectionHeading({ index, title }: SectionHeadingProps) {
+export function SectionHeading({ title, aside }: SectionHeadingProps) {
   return (
-    <div className="section__head" data-reveal>
-      <span className="section__index" aria-hidden="true">
-        {index}
-      </span>
-      <h2 className="section__heading">{title}</h2>
-      <span className="section__rule" aria-hidden="true" />
+    <div className="section__head">
+      <h2 className="section__title">{title}</h2>
+      {aside ? <div className="label">{aside}</div> : null}
     </div>
   );
 }

@@ -6,36 +6,38 @@
     "projects": "Projects",
     "skills": "Skills",
     "contact": "Contact",
-    "switchLanguage": "Switch language"
+    "switchLanguage": "Switch language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "hero": {
-    "greeting": "Hi, I'm",
     "name": "Ruben Coto",
-    "tagline": "Full-stack Software Engineer building production systems with .NET, React, and TypeScript — backed by 5+ years diagnosing AWS infrastructure in mission-critical environments.",
+    "role": "Software Engineer",
+    "summary": "I build production software with .NET, React and TypeScript, backed by five years diagnosing AWS infrastructure in mission-critical environments.",
     "location": "San José, Costa Rica",
     "availability": "Open to opportunities",
     "downloadCv": "Download CV",
     "viewProjects": "View Projects"
   },
   "about": {
-    "heading": "About Me",
-    "body": "Full-stack Software Engineer with experience building and deploying production systems using ASP.NET Core, React, TypeScript, and MySQL — backed by more than five years diagnosing AWS infrastructure in mission-critical environments. I design modular architectures with Domain-Driven Design, secure authentication, and cloud deployments on Railway for both personal and client projects. I'm currently completing a Bachelor's degree in Systems Engineering with an emphasis on Software Development (expected March 2027), and I'm AWS Certified Solutions Architect – Associate, looking for a role that combines software development with cloud expertise.",
-    "facts": {
-      "location": {
-        "label": "Based in",
-        "value": "San José, Costa Rica"
+    "heading": "About",
+    "lead": "I work across the stack — modular .NET backends and the React interfaces on top of them — and I came to product engineering from five years of production AWS support, which shapes how I think about failure modes and observability.",
+    "blocks": {
+      "engineering": {
+        "title": "Engineering focus",
+        "body": "Modular .NET 8 backends organised with Domain-Driven Design, EF Core for data access, and React + TypeScript front ends. Comfortable owning a feature from schema through to UI."
+      },
+      "cloud": {
+        "title": "Cloud & infrastructure",
+        "body": "Five years diagnosing production AWS environments across EC2, S3, EBS, RDS, DynamoDB, VPC and Route 53, with root-cause analysis on outages, performance degradation and connectivity failures."
       },
       "education": {
-        "label": "Education",
-        "value": "B.Sc. Systems Engineering — Universidad Latina de Costa Rica, expected 2027"
+        "title": "Education",
+        "body": "B.Sc. Systems Engineering, emphasis in Software Development — Universidad Latina de Costa Rica, expected March 2027."
       },
       "certification": {
-        "label": "Certification",
-        "value": "AWS Certified Solutions Architect – Associate"
-      },
-      "languages": {
-        "label": "Languages",
-        "value": "Spanish (native) · English (C1)"
+        "title": "Certification",
+        "body": "AWS Certified Solutions Architect – Associate. Cambridge C1 Advanced (English)."
       }
     }
   },
@@ -44,54 +46,74 @@
     "awsSupportSpecialist": {
       "role": "AWS Technical Support Specialist",
       "company": "Amazon Support Services CR",
+      "location": "San José, Costa Rica",
       "period": "Jan 2023 – Mar 2026",
-      "description": "Served as an escalation point for high-severity incidents, diagnosing and resolving complex issues across EC2, S3, EBS, RDS, DynamoDB, VPC, and Route 53. Analyzed CloudWatch logs and system configurations to identify root causes of outages and performance degradation, reproducing issues in isolated test environments to validate fixes."
+      "points": [
+        "Escalation point for high-severity incidents, coordinating with internal AWS engineering teams to drive critical production issues to resolution.",
+        "Diagnosed complex infrastructure problems across EC2, S3, EBS, RDS, DynamoDB, VPC and Route 53.",
+        "Traced outages, performance degradation and connectivity failures to root cause using CloudWatch metrics, system logs and configuration review.",
+        "Reproduced customer issues in isolated test environments to validate fixes before rollout.",
+        "Translated technical findings into step-by-step remediation guidance for both engineers and non-technical stakeholders."
+      ]
     },
     "advancedTechnician": {
       "role": "Advanced Technician, D2AS",
-      "company": "Amazon Support Services CR (Remote)",
+      "company": "Amazon Support Services CR",
+      "location": "Remote",
       "period": "Jul 2020 – Dec 2022",
-      "description": "Acted as a subject matter expert supporting Tier 1 and Tier 2 associates on complex Amazon Echo and Alexa hardware, software, and connectivity issues, and served as the primary liaison between Hardware and Software teams to speed up cross-functional diagnostics."
+      "points": [
+        "Subject matter expert for Tier 1 and Tier 2 associates handling Amazon Echo and Alexa cases.",
+        "Resolved hardware, software and connectivity issues beyond the escalating tier's scope.",
+        "Primary liaison between the Hardware and Software departments, shortening cross-team diagnosis cycles."
+      ]
     }
   },
   "projects": {
-    "heading": "Featured Projects",
-    "viewLiveLabel": "Visit Site",
-    "tucitaonline": {
-      "title": "TuCitaOnline",
-      "description": "A SaaS platform for medical practice administration — appointments, patient records, and clinic workflows."
-    },
+    "heading": "Projects",
+    "architectureLabel": "Architecture",
+    "stackLabel": "Stack",
+    "viewLiveLabel": "Visit site",
+    "viewCodeLabel": "Source",
     "cdm": {
       "title": "Consultorios Dr. Moraga",
-      "description": "A single-tenant clinical management system built for Consultorios Dr. Roy Moraga — a modular monolith in .NET 8 using Domain-Driven Design across 16+ modules, with a React/TypeScript frontend and MySQL via EF Core, deployed on Railway.",
-      "modulesHeading": "Modules",
-      "modules": {
-        "scheduling": "Configurable per-room appointment scheduling",
-        "clinicalHistory": "Digital clinical history and patient records",
-        "compliance": "Audit logging compliant with Costa Rica's Law 8968 (data protection)",
-        "reports": "Automated PDF report generation",
-        "whatsappBot": "AI-powered WhatsApp agent for appointment booking (Twilio + Anthropic SDK)"
-      }
+      "context": "Clinical management system · Client project",
+      "status": "Live",
+      "summary": "A single-tenant clinical management system that replaced paper-based scheduling and patient records for a private medical practice, including the audit trail Costa Rican health data is legally required to keep.",
+      "notes": [
+        "Modular monolith in .NET 8 structured with Domain-Driven Design across 16+ bounded modules.",
+        "React 18 and TypeScript front end organised with Feature-Sliced Design.",
+        "MySQL through EF Core, deployed on Railway.",
+        "Configurable per-room scheduling, clinical history and automated PDF reporting.",
+        "Audit logging built to satisfy Costa Rica's Law 8968 data-protection requirements.",
+        "AI WhatsApp booking agent built on Twilio, the Anthropic SDK, Redis and SignalR."
+      ]
+    },
+    "tucitaonline": {
+      "title": "TuCitaOnline",
+      "context": "Medical practice SaaS",
+      "status": "Private repository",
+      "summary": "A SaaS platform for medical practice administration covering appointments, patient records and clinic workflows."
     }
   },
   "skills": {
     "heading": "Skills",
     "categories": {
-      "backend": "Backend",
+      "languages": "Languages",
       "frontend": "Frontend",
-      "database": "Database",
-      "cloud": "Cloud & DevOps",
+      "backend": "Backend",
+      "cloud": "Cloud & Infrastructure",
+      "databases": "Databases",
       "tools": "Tools"
     }
   },
   "contact": {
     "heading": "Contact",
-    "intro": "Open to new opportunities — feel free to reach out.",
+    "intro": "I'm open to software engineering roles. Email is the fastest way to reach me.",
     "emailLabel": "Email",
     "linkedinLabel": "LinkedIn",
     "githubLabel": "GitHub"
   },
   "footer": {
-    "builtWith": "Built with React, Vite & TypeScript"
+    "builtWith": "React · TypeScript · Vite"
   }
 }

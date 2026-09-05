@@ -1,41 +1,43 @@
 {
   "nav": {
     "home": "Inicio",
-    "about": "Sobre mí",
+    "about": "Perfil",
     "experience": "Experiencia",
     "projects": "Proyectos",
     "skills": "Skills",
     "contact": "Contacto",
-    "switchLanguage": "Cambiar idioma"
+    "switchLanguage": "Cambiar idioma",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
   },
   "hero": {
-    "greeting": "Hola, soy",
     "name": "Ruben Coto",
-    "tagline": "Ingeniero de software full-stack construyendo sistemas en producción con .NET, React y TypeScript — respaldado por más de 5 años diagnosticando infraestructura de AWS en entornos de misión crítica.",
+    "role": "Ingeniero de Software",
+    "summary": "Construyo software en producción con .NET, React y TypeScript, con cinco años diagnosticando infraestructura de AWS en entornos de misión crítica.",
     "location": "San José, Costa Rica",
     "availability": "Disponible para oportunidades",
     "downloadCv": "Descargar CV",
     "viewProjects": "Ver Proyectos"
   },
   "about": {
-    "heading": "Sobre mí",
-    "body": "Ingeniero de software full-stack con experiencia construyendo y desplegando sistemas en producción usando ASP.NET Core, React, TypeScript y MySQL — respaldado por más de cinco años diagnosticando infraestructura de AWS en entornos de misión crítica. Diseño arquitecturas modulares con Domain-Driven Design, autenticación segura y despliegues en la nube en Railway, tanto en proyectos personales como para clientes. Actualmente termino una Licenciatura en Ingeniería en Sistemas con énfasis en Desarrollo de Software (graduación estimada marzo de 2027), y tengo la certificación AWS Certified Solutions Architect – Associate; busco un rol que combine desarrollo de software con experiencia en la nube.",
-    "facts": {
-      "location": {
-        "label": "Ubicación",
-        "value": "San José, Costa Rica"
+    "heading": "Perfil",
+    "lead": "Trabajo en todo el stack — backends modulares en .NET y las interfaces en React sobre ellos — y llegué al desarrollo de producto desde cinco años de soporte de AWS en producción, lo que define cómo pienso los modos de fallo y la observabilidad.",
+    "blocks": {
+      "engineering": {
+        "title": "Enfoque de ingeniería",
+        "body": "Backends modulares en .NET 8 organizados con Domain-Driven Design, EF Core para acceso a datos, y front ends en React + TypeScript. Cómodo llevando una funcionalidad desde el esquema hasta la interfaz."
+      },
+      "cloud": {
+        "title": "Cloud e infraestructura",
+        "body": "Cinco años diagnosticando entornos de AWS en producción sobre EC2, S3, EBS, RDS, DynamoDB, VPC y Route 53, con análisis de causa raíz en caídas, degradación de rendimiento y fallos de conectividad."
       },
       "education": {
-        "label": "Formación",
-        "value": "Ingeniería en Sistemas — Universidad Latina de Costa Rica, graduación estimada 2027"
+        "title": "Formación",
+        "body": "Ingeniería en Sistemas con énfasis en Desarrollo de Software — Universidad Latina de Costa Rica, graduación estimada marzo de 2027."
       },
       "certification": {
-        "label": "Certificación",
-        "value": "AWS Certified Solutions Architect – Associate"
-      },
-      "languages": {
-        "label": "Idiomas",
-        "value": "Español (nativo) · Inglés (C1)"
+        "title": "Certificación",
+        "body": "AWS Certified Solutions Architect – Associate. Cambridge C1 Advanced (inglés)."
       }
     }
   },
@@ -44,54 +46,74 @@
     "awsSupportSpecialist": {
       "role": "Especialista de Soporte Técnico de AWS",
       "company": "Amazon Support Services CR",
+      "location": "San José, Costa Rica",
       "period": "Ene 2023 – Mar 2026",
-      "description": "Punto de escalamiento para incidentes de alta severidad, diagnosticando y resolviendo problemas complejos en EC2, S3, EBS, RDS, DynamoDB, VPC y Route 53. Analicé logs de CloudWatch y configuraciones del sistema para identificar causas raíz de caídas y degradación de rendimiento, reproduciendo problemas en entornos de prueba aislados para validar soluciones."
+      "points": [
+        "Punto de escalamiento para incidentes de alta severidad, coordinando con equipos internos de ingeniería de AWS para resolver problemas críticos en producción.",
+        "Diagnostiqué problemas complejos de infraestructura en EC2, S3, EBS, RDS, DynamoDB, VPC y Route 53.",
+        "Rastreé caídas, degradación de rendimiento y fallos de conectividad hasta su causa raíz usando métricas de CloudWatch, logs del sistema y revisión de configuración.",
+        "Reproduje incidencias de clientes en entornos de prueba aislados para validar las soluciones antes de aplicarlas.",
+        "Traduje hallazgos técnicos en guías de remediación paso a paso, tanto para ingenieros como para interlocutores no técnicos."
+      ]
     },
     "advancedTechnician": {
       "role": "Técnico Avanzado, D2AS",
-      "company": "Amazon Support Services CR (Remoto)",
+      "company": "Amazon Support Services CR",
+      "location": "Remoto",
       "period": "Jul 2020 – Dic 2022",
-      "description": "Actué como experto de referencia apoyando a asociados de Tier 1 y Tier 2 en problemas complejos de hardware, software y conectividad de dispositivos Amazon Echo y Alexa, y fui el enlace principal entre los equipos de Hardware y Software para agilizar el diagnóstico entre áreas."
+      "points": [
+        "Experto de referencia para asociados de Tier 1 y Tier 2 en casos de Amazon Echo y Alexa.",
+        "Resolví problemas de hardware, software y conectividad fuera del alcance del nivel que escalaba.",
+        "Enlace principal entre los departamentos de Hardware y Software, acortando los ciclos de diagnóstico entre equipos."
+      ]
     }
   },
   "projects": {
-    "heading": "Proyectos Destacados",
+    "heading": "Proyectos",
+    "architectureLabel": "Arquitectura",
+    "stackLabel": "Stack",
     "viewLiveLabel": "Visitar sitio",
-    "tucitaonline": {
-      "title": "TuCitaOnline",
-      "description": "Una plataforma SaaS para administración de consultorios médicos — citas, expedientes y flujos de trabajo de la clínica."
-    },
+    "viewCodeLabel": "Código",
     "cdm": {
       "title": "Consultorios Dr. Moraga",
-      "description": "Sistema de gestión clínica de un solo inquilino construido para Consultorios Dr. Roy Moraga — un monolito modular en .NET 8 con Domain-Driven Design a través de más de 16 módulos, con frontend en React/TypeScript y MySQL vía EF Core, desplegado en Railway.",
-      "modulesHeading": "Módulos",
-      "modules": {
-        "scheduling": "Agenda de citas configurable por consultorio",
-        "clinicalHistory": "Historial clínico digital y expedientes de pacientes",
-        "compliance": "Registro de auditoría conforme a la Ley 8968 de Costa Rica (protección de datos)",
-        "reports": "Generación automática de reportes en PDF",
-        "whatsappBot": "Agente de WhatsApp con IA para reserva de citas (Twilio + Anthropic SDK)"
-      }
+      "context": "Sistema de gestión clínica · Proyecto de cliente",
+      "status": "En producción",
+      "summary": "Sistema de gestión clínica de un solo inquilino que reemplazó la agenda y los expedientes en papel de un consultorio médico privado, incluyendo el registro de auditoría que la ley exige para datos de salud en Costa Rica.",
+      "notes": [
+        "Monolito modular en .NET 8 estructurado con Domain-Driven Design a través de más de 16 módulos acotados.",
+        "Front end en React 18 y TypeScript organizado con Feature-Sliced Design.",
+        "MySQL mediante EF Core, desplegado en Railway.",
+        "Agenda configurable por consultorio, historial clínico y generación automática de reportes en PDF.",
+        "Registro de auditoría construido para cumplir con la Ley 8968 de protección de datos de Costa Rica.",
+        "Agente de WhatsApp con IA para reservas, construido sobre Twilio, el SDK de Anthropic, Redis y SignalR."
+      ]
+    },
+    "tucitaonline": {
+      "title": "TuCitaOnline",
+      "context": "SaaS para consultorios médicos",
+      "status": "Repositorio privado",
+      "summary": "Plataforma SaaS para la administración de consultorios médicos, cubriendo citas, expedientes de pacientes y flujos de trabajo de la clínica."
     }
   },
   "skills": {
     "heading": "Skills",
     "categories": {
-      "backend": "Backend",
+      "languages": "Lenguajes",
       "frontend": "Frontend",
-      "database": "Base de datos",
-      "cloud": "Cloud y DevOps",
+      "backend": "Backend",
+      "cloud": "Cloud e Infraestructura",
+      "databases": "Bases de datos",
       "tools": "Herramientas"
     }
   },
   "contact": {
     "heading": "Contacto",
-    "intro": "Abierto a nuevas oportunidades — no dudes en escribirme.",
+    "intro": "Estoy abierto a posiciones de ingeniería de software. El correo es la vía más rápida para contactarme.",
     "emailLabel": "Email",
     "linkedinLabel": "LinkedIn",
     "githubLabel": "GitHub"
   },
   "footer": {
-    "builtWith": "Construido con React, Vite y TypeScript"
+    "builtWith": "React · TypeScript · Vite"
   }
 }

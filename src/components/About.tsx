@@ -1,25 +1,21 @@
 import { useTranslation } from 'react-i18next';
-import { aboutFacts } from '../data/about';
+import { aboutBlocks } from '../data/about';
 import { SectionHeading } from './SectionHeading';
 
 export function About() {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="section">
-      <SectionHeading index="01" title={t('about.heading')} />
-      <div className="about__layout">
-        <p className="about__body" data-reveal>
-          {t('about.body')}
-        </p>
-        <dl className="facts" data-reveal>
-          {aboutFacts.map((fact) => (
-            <div key={fact.id} className="facts__row">
-              <dt className="facts__label">{t(`about.facts.${fact.id}.label`)}</dt>
-              <dd className="facts__value">{t(`about.facts.${fact.id}.value`)}</dd>
-            </div>
-          ))}
-        </dl>
+    <section id="about" className="section shell">
+      <SectionHeading title={t('about.heading')} />
+      <p className="about__lead reveal">{t('about.lead')}</p>
+      <div className="about__grid reveal">
+        {aboutBlocks.map((block) => (
+          <article key={block.id} className="about__block">
+            <h3 className="about__block-title">{t(`about.blocks.${block.id}.title`)}</h3>
+            <p className="about__block-body">{t(`about.blocks.${block.id}.body`)}</p>
+          </article>
+        ))}
       </div>
     </section>
   );
