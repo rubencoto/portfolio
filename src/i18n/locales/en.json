@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Ruben Coto",
+    "tagline": "Software Engineer building reliable web systems with .NET, TypeScript, and React.",
+    "downloadCv": "Download CV",
+    "viewProjects": "View Projects"
+  },
+  "about": {
+    "heading": "About Me",
+    "body": "Placeholder bio — update this in src/i18n/locales/en.json with your real background, focus areas, and what you're looking for next."
+  },
+  "experience": {
+    "heading": "Experience",
+    "current": {
+      "role": "Update this role title",
+      "company": "Update this company name",
+      "period": "Update these dates",
+      "description": "Update this with a real description of what you did in this role."
+    }
+  },
+  "projects": {
+    "heading": "Featured Projects",
+    "tucitaonline": {
+      "title": "TuCitaOnline",
+      "description": "A SaaS platform for medical practice administration — appointments, patient records, and clinic workflows."
+    },
+    "cdm": {
+      "title": "Consultorios Dr. Moraga",
+      "description": "A multi-module system built for a medical clinic client, spanning everything from patient-facing automation to back-office management.",
+      "modulesHeading": "Modules",
+      "modules": {
+        "bot": "Appointment booking bot",
+        "erp": "Clinic management ERP"
+      }
+    }
+  },
+  "skills": {
+    "heading": "Skills",
+    "categories": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "database": "Database",
+      "tools": "Tools"
+    }
+  },
+  "contact": {
+    "heading": "Contact",
+    "intro": "Open to new opportunities — feel free to reach out.",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub"
+  }
+}

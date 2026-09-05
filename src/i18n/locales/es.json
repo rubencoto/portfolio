@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Skills",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Ruben Coto",
+    "tagline": "Ingeniero de software construyendo sistemas web confiables con .NET, TypeScript y React.",
+    "downloadCv": "Descargar CV",
+    "viewProjects": "Ver Proyectos"
+  },
+  "about": {
+    "heading": "Sobre mí",
+    "body": "Bio de ejemplo — actualiza esto en src/i18n/locales/es.json con tu experiencia real, áreas de enfoque y lo que buscas."
+  },
+  "experience": {
+    "heading": "Experiencia",
+    "current": {
+      "role": "Actualiza este puesto",
+      "company": "Actualiza este nombre de empresa",
+      "period": "Actualiza estas fechas",
+      "description": "Actualiza esto con una descripción real de lo que hiciste en este puesto."
+    }
+  },
+  "projects": {
+    "heading": "Proyectos Destacados",
+    "tucitaonline": {
+      "title": "TuCitaOnline",
+      "description": "Una plataforma SaaS para administración de consultorios médicos — citas, expedientes y flujos de trabajo de la clínica."
+    },
+    "cdm": {
+      "title": "Consultorios Dr. Moraga",
+      "description": "Un sistema multi-módulo construido para un cliente de consultorio médico, que abarca desde automatización para pacientes hasta gestión administrativa.",
+      "modulesHeading": "Módulos",
+      "modules": {
+        "bot": "Bot de reserva de citas",
+        "erp": "ERP de gestión de la clínica"
+      }
+    }
+  },
+  "skills": {
+    "heading": "Skills",
+    "categories": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "database": "Base de datos",
+      "tools": "Herramientas"
+    }
+  },
+  "contact": {
+    "heading": "Contacto",
+    "intro": "Abierto a nuevas oportunidades — no dudes en escribirme.",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub"
+  }
+}
