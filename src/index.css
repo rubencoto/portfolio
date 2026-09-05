@@ -193,6 +193,13 @@ body {
   gap: var(--spacing-3);
 }
 
+.skill-group {
+  background-color: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--spacing-2);
+}
+
 .skill-group__title {
   color: var(--color-accent);
 }
