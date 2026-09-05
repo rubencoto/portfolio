@@ -43,6 +43,21 @@
   },
   "experience": {
     "heading": "Experience",
+    "cdmConsultant": {
+      "role": "Software Engineer Consultant",
+      "company": "Consultorios Dr. Moraga",
+      "location": "Contract",
+      "period": "Mar 2026 – Present",
+      "points": [
+        "Digitized operations for a multi-specialty medical clinic, reducing appointment scheduling time by 70% and eliminating double-bookings entirely.",
+        "Built a 15-module clinical management system (EHR, scheduling, nutrition, psychology, NPS, audit) as sole developer in 13 weeks.",
+        "Achieved full compliance with Costa Rica's data privacy law (Ley 8968), with AES-256-GCM encryption of all patient health data at rest.",
+        "Automated appointment reminders and NPS surveys, cutting administrative follow-up effort by 60%.",
+        "Delivered 438+ backend tests with over 90% domain coverage, an OWASP Top 10 audit, and WCAG 2.1 AA accessibility compliance.",
+        "Enabled real-time business intelligence dashboards, giving the clinic data-driven visibility into appointments, diagnoses, doctor occupancy, and patient satisfaction for the first time.",
+        "Designed an event-driven modular monolith with 14 bounded contexts and strict module isolation, holding sub-100ms p95 API latency under load."
+      ]
+    },
     "awsSupportSpecialist": {
       "role": "AWS Technical Support Specialist",
       "company": "Amazon Support Services CR",

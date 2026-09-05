@@ -43,6 +43,21 @@
   },
   "experience": {
     "heading": "Experiencia",
+    "cdmConsultant": {
+      "role": "Ingeniero de Software Consultor",
+      "company": "Consultorios Dr. Moraga",
+      "location": "Contrato temporal",
+      "period": "Mar 2026 – Actualidad",
+      "points": [
+        "Digitalicé las operaciones de una clínica médica multiespecialidad, reduciendo el tiempo de agendamiento de citas en un 70% y eliminando por completo los traslapes de citas.",
+        "Construí un sistema de gestión clínica de 15 módulos (expediente electrónico, agenda, nutrición, psicología, NPS, auditoría) como único desarrollador en 13 semanas.",
+        "Logré cumplimiento total con la Ley 8968 de protección de datos de Costa Rica, con cifrado AES-256-GCM de todos los datos de salud en reposo.",
+        "Automaticé recordatorios de citas y encuestas de NPS, reduciendo el esfuerzo administrativo de seguimiento en un 60%.",
+        "Entregué más de 438 pruebas de backend con más del 90% de cobertura del dominio, una auditoría OWASP Top 10 y cumplimiento de accesibilidad WCAG 2.1 AA.",
+        "Habilité dashboards de inteligencia de negocio en tiempo real, dando a la clínica visibilidad basada en datos sobre citas, diagnósticos, ocupación de doctores y satisfacción de pacientes por primera vez.",
+        "Diseñé un monolito modular basado en eventos con 14 contextos delimitados y aislamiento estricto entre módulos, manteniendo una latencia p95 de API por debajo de 100ms bajo carga."
+      ]
+    },
     "awsSupportSpecialist": {
       "role": "Especialista de Soporte Técnico de AWS",
       "company": "Amazon Support Services CR",
