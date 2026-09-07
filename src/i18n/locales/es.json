@@ -99,8 +99,19 @@
         "Front end en React 18 y TypeScript organizado con Feature-Sliced Design.",
         "MySQL mediante EF Core, desplegado en Railway.",
         "Agenda configurable por consultorio, historial clínico y generación automática de reportes en PDF.",
-        "Registro de auditoría construido para cumplir con la Ley 8968 de protección de datos de Costa Rica.",
-        "Agente de WhatsApp con IA para reservas, construido sobre Twilio, el SDK de Anthropic, Redis y SignalR."
+        "Registro de auditoría construido para cumplir con la Ley 8968 de protección de datos de Costa Rica."
+      ]
+    },
+    "cintia": {
+      "title": "CintIA",
+      "context": "Agente de IA por WhatsApp · Módulo de Consultorios Dr. Moraga",
+      "status": "En producción",
+      "summary": "Agente conversacional de IA que atiende WhatsApp para agendar citas médicas en lenguaje natural, sin intervención humana en el flujo estándar, integrado al sistema de Consultorios Dr. Moraga.",
+      "notes": [
+        "Agente con Claude (Anthropic) usando tool use / function calling para identificar doctor o especialidad, recopilar los datos del paciente y consultar disponibilidad en tiempo real.",
+        "Modo administrativo dentro del mismo chat: creación de expedientes, confirmación de citas y gestión de horarios.",
+        "Resiliencia de producción: circuit breaker ante caídas del backend, filtro de preguntas frecuentes y traspaso a un humano cuando el bot no resuelve.",
+        "Historial de conversación por paciente en Redis; integración con WhatsApp Business API vía Twilio."
       ]
     },
     "tucitaonline": {

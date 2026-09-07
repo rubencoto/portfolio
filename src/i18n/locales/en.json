@@ -99,8 +99,19 @@
         "React 18 and TypeScript front end organised with Feature-Sliced Design.",
         "MySQL through EF Core, deployed on Railway.",
         "Configurable per-room scheduling, clinical history and automated PDF reporting.",
-        "Audit logging built to satisfy Costa Rica's Law 8968 data-protection requirements.",
-        "AI WhatsApp booking agent built on Twilio, the Anthropic SDK, Redis and SignalR."
+        "Audit logging built to satisfy Costa Rica's Law 8968 data-protection requirements."
+      ]
+    },
+    "cintia": {
+      "title": "CintIA",
+      "context": "AI WhatsApp agent · Part of Consultorios Dr. Moraga",
+      "status": "Live",
+      "summary": "A conversational AI agent that books medical appointments over WhatsApp in natural language, with zero human intervention in the standard flow, integrated with the Consultorios Dr. Moraga system.",
+      "notes": [
+        "Agent built on Claude (Anthropic) using tool use / function calling to identify the doctor or specialty, gather patient details and check real-time availability.",
+        "Admin mode inside the same chat: patient record creation, confirmed booking and schedule management.",
+        "Production resilience: circuit breaker for backend outages, an FAQ filter, and handoff to a human when the bot can't resolve a request.",
+        "Per-patient conversation history in Redis; WhatsApp Business API integration via Twilio."
       ]
     },
     "tucitaonline": {

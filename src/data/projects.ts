@@ -18,6 +18,19 @@ export const projects: Project[] = [
     links: { live: 'https://consultoriosdrmoraga.com' },
   },
   {
+    id: 'cintia',
+    tech: [
+      'TypeScript',
+      'Node.js',
+      'Express',
+      'Anthropic Claude API',
+      'Twilio',
+      'Redis',
+      'Docker',
+      'Railway',
+    ],
+  },
+  {
     id: 'tucitaonline',
     tech: ['C#', '.NET', 'React', 'TypeScript'],
   },
