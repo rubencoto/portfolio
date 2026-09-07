@@ -26,6 +26,8 @@ export const projects: Project[] = [
       'Anthropic Claude API',
       'Twilio',
       'Redis',
+      'React',
+      'Vitest',
       'Docker',
       'Railway',
     ],

@@ -104,14 +104,16 @@
     },
     "cintia": {
       "title": "CintIA",
-      "context": "AI WhatsApp agent · Part of Consultorios Dr. Moraga",
+      "context": "Multi-channel AI agent · Consultorios Dr. Moraga",
       "status": "Live",
-      "summary": "A conversational AI agent that books medical appointments over WhatsApp in natural language, with zero human intervention in the standard flow, integrated with the Consultorios Dr. Moraga system.",
+      "summary": "A conversational AI agent built on Claude: it books medical appointments over WhatsApp in natural language and answers questions about the clinic's reports inside the internal admin panel. Runs as its own service and integrates with the practice-management system over HTTP.",
       "notes": [
-        "Agent built on Claude (Anthropic) using tool use / function calling to identify the doctor or specialty, gather patient details and check real-time availability.",
-        "Admin mode inside the same chat: patient record creation, confirmed booking and schedule management.",
-        "Production resilience: circuit breaker for backend outages, an FAQ filter, and handoff to a human when the bot can't resolve a request.",
-        "Per-patient conversation history in Redis; WhatsApp Business API integration via Twilio."
+        "One agent loop with three tool catalogues depending on who is talking: patients and admin staff over WhatsApp, and an analyst role inside the internal panel.",
+        "WhatsApp booking: identifies the doctor or specialty, gathers patient details and checks real availability against the backend before filing the request.",
+        "Analytics copilot: answers in natural language about occupancy, appointments per practitioner and room usage, with read-only tools and an explicit rule never to estimate a figure that didn't come from a real report.",
+        "Report queries carry the logged-in person's token rather than a service credential, so permissions and the audit trail stay attributed to whoever asked.",
+        "Production resilience: circuit breaker for backend outages, an FAQ filter, automatic recovery from expired sessions, and a per-person quota to cap model cost.",
+        "177 automated tests at 100% line coverage, including the ones pinning credential separation and per-role tool isolation."
       ]
     },
     "tucitaonline": {

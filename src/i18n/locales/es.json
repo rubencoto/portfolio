@@ -104,14 +104,16 @@
     },
     "cintia": {
       "title": "CintIA",
-      "context": "Agente de IA por WhatsApp · Módulo de Consultorios Dr. Moraga",
+      "context": "Agente de IA multi-canal · Consultorios Dr. Moraga",
       "status": "En producción",
-      "summary": "Agente conversacional de IA que atiende WhatsApp para agendar citas médicas en lenguaje natural, sin intervención humana en el flujo estándar, integrado al sistema de Consultorios Dr. Moraga.",
+      "summary": "Agente conversacional de IA construido sobre Claude: agenda citas médicas por WhatsApp en lenguaje natural y responde preguntas sobre los reportes de la clínica dentro del panel interno. Corre como servicio propio e integra con el sistema de gestión por HTTP.",
       "notes": [
-        "Agente con Claude (Anthropic) usando tool use / function calling para identificar doctor o especialidad, recopilar los datos del paciente y consultar disponibilidad en tiempo real.",
-        "Modo administrativo dentro del mismo chat: creación de expedientes, confirmación de citas y gestión de horarios.",
-        "Resiliencia de producción: circuit breaker ante caídas del backend, filtro de preguntas frecuentes y traspaso a un humano cuando el bot no resuelve.",
-        "Historial de conversación por paciente en Redis; integración con WhatsApp Business API vía Twilio."
+        "Un mismo loop de agente con tres catálogos de herramientas según quién habla: paciente y personal administrativo por WhatsApp, y analista dentro del panel interno.",
+        "Agendamiento por WhatsApp: identifica doctor o especialidad, recopila los datos del paciente y consulta disponibilidad real contra el backend antes de registrar la solicitud.",
+        "Copiloto de analítica: responde en lenguaje natural sobre ocupación, citas por profesional y uso de consultorios, con herramientas de solo lectura y la regla explícita de no estimar ninguna cifra que no venga de un reporte real.",
+        "Cada consulta de reportes viaja con el token de la persona logueada en vez de una credencial de servicio, para que los permisos y la traza de auditoría queden atribuidos a quien pregunta.",
+        "Resiliencia de producción: circuit breaker ante caídas del backend, filtro de preguntas frecuentes, renovación automática de sesión vencida y cuota por persona para acotar el costo del modelo.",
+        "177 pruebas automatizadas con 100% de cobertura de líneas, incluidas las que fijan la separación de credenciales y el aislamiento de herramientas por rol."
       ]
     },
     "tucitaonline": {
